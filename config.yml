@@ -1,0 +1,29 @@
+# Package Overview
+package_name: mlmodel_render
+
+# Data Files
+data_file: census.csv
+model_file_name: model.pkl
+encoder_file_name: encoder.pkl
+binarizer_file_name: lbinarizer.pkl
+output_file_slice: slice_output.txt
+# Variables
+# The variable we are attempting to predict (sale price)
+target: salary
+
+cat_features:
+  - workclass
+  - education
+  - marital-status
+  - occupation
+  - relationship
+  - race
+  - sex
+  - native-country
+
+# set train/test split
+test_size: 0.2
+
+# to set the random seed
+random_state: 94
+
